@@ -1,0 +1,56 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 40 100% 10%; /* Dark yellow/brown */
+
+    --primary: 48 100% 50%; /* Bright yellow */
+    --primary-foreground: 0 0% 0%; /* Black */
+
+    --secondary: 54 100% 90%; /* Very light yellow */
+    --secondary-foreground: 40 100% 10%;
+
+    --accent: 48 100% 50%; /* Bright yellow */
+    --accent-foreground: 0 0% 0%; /* Black */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 39 70% 80%; /* Soft yellow border */
+    --input: 48 100% 50%;
+    --ring: 48 100% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 40 20% 10%; /* Dark background */
+    --foreground: 48 100% 90%; /* Light yellow */
+
+    --primary: 48 100% 70%; /* Brighter yellow for dark mode */
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 40 20% 20%; /* Dark secondary */
+    --secondary-foreground: 48 100% 90%;
+
+    --accent: 48 100% 70%;
+    --accent-foreground: 0 0% 0%;
+
+    --border: 40 20% 30%;
+    --input: 48 100% 70%;
+    --ring: 48 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

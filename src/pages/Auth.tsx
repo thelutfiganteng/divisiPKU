@@ -205,7 +205,7 @@ const Auth = () => {
                 </CardFooter>
               </form>
               <div className="text-center text-sm mt-2">
-                <a href="https://updl-palembang-ksc2.vercel.app/">
+                <a href="https://updl-palembang.vercel.app/">
                   <Button 
                     type="button" 
                     variant="link" 

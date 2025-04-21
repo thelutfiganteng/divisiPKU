@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -195,7 +194,7 @@ const Auth = () => {
                     />
                   </div>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="flex flex-col space-y-2">
                   <Button 
                     type="submit" 
                     className="w-full bg-[#FFF574] hover:bg-[#FFF574]"
@@ -205,6 +204,17 @@ const Auth = () => {
                   </Button>
                 </CardFooter>
               </form>
+              <div className="text-center text-sm mt-2">
+                <a href="https://updl-palembang-ksc2.vercel.app/">
+                  <Button 
+                    type="button" 
+                    variant="link" 
+                    className="p-0 h-auto font-semibold text-primary"
+                  >
+                    Kembali Ke Beranda
+                  </Button>
+                </a>
+              </div>
             </TabsContent>
             
             <TabsContent value="signup">
@@ -271,7 +281,7 @@ const Auth = () => {
                     </Select>
                   </div>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="flex flex-col space-y-2">
                   <Button 
                     type="submit" 
                     className="w-full bg-[#FFF574] hover:bg-[#FFF574]"
@@ -281,6 +291,17 @@ const Auth = () => {
                   </Button>
                 </CardFooter>
               </form>
+              <div className="text-center text-sm mt-2">
+                <a href="https://updl-palembang-ksc2.vercel.app/">
+                  <Button 
+                    type="button" 
+                    variant="link" 
+                    className="p-0 h-auto font-semibold text-primary"
+                  >
+                    Kembali Ke Beranda
+                  </Button>
+                </a>
+              </div>
             </TabsContent>
           </Tabs>
         </Card>
